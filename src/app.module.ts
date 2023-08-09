@@ -18,12 +18,12 @@ import { LoggerMiddleware } from './middlewares/logger.middleware';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'sql12.freesqldatabase.com',
+      host: 'localhost',
       port: 3306,
-      username: 'sql12628990',
-      password: 'Alak7SVNjM',
-      database: 'sql12628990',
-      entities: [User, Genre, Series, Seasons, Episodes, Streams],
+      username: 'root',
+      password: 'password',
+      database: 'nest_iptv',
+      entities: [User, Genre, Series, Seasons, Episodes],
       synchronize: true,
     }),
     UsersModule,
